@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Events</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<h1>Upcoming Events</h1>
+<ul>
+{% for e in events %}
+<li>{{ e.name }} - {{ e.date }} - <a href="/book/{{ loop.index0 }}">Book</a></li>
+{% endfor %}
+</ul>
+<a href="/admin">Admin Panel</a>
+</body>
+</html>

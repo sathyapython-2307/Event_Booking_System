@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head><title>Booking Confirmed</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<h2>Thank you {{ name }}!</h2>
+<p>Your booking for {{ event }} is confirmed.</p>
+<img src="/static/{{ qr.split('/')[-1] }}" width="200">
+</body>
+</html>

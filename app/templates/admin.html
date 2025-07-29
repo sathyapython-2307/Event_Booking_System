@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Panel</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<h2>Add Event</h2>
+<form method="post">
+Name: <input type="text" name="name"><br>
+Date: <input type="date" name="date"><br>
+Tickets: <input type="number" name="tickets"><br>
+<button type="submit">Add</button>
+</form>
+<h3>Current Events</h3>
+<ul>
+{% for e in events %}
+<li>{{ e.name }} - {{ e.date }} - {{ e.tickets }} tickets</li>
+{% endfor %}
+</ul>
+<a href="/">Back</a>
+</body>
+</html>
